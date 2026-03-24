@@ -1,0 +1,92 @@
+/*Fonte do google - montserrat*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
+
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #f4f7ff;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 550px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.container p a {
+    position: relative;
+    text-decoration: none;
+    color: #6d50e2;
+    font-weight: 600;
+}
+
+.container p a:hover {
+    z-index: 10;
+    text-decoration: underline;
+    position: relative;
+}
+
+.container p span {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    min-width: 120px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+    background: #6d50e2;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+.container p a:hover span {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+
+}
+
+.container p span::before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #6d50e2;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
